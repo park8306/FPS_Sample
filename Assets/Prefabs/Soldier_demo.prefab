@@ -323,7 +323,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4905522451986274548}
   - component: {fileID: 4905522451994031912}
-  - component: {fileID: 1518747026348796428}
+  - component: {fileID: 700860038}
+  - component: {fileID: 2505694493139936681}
   m_Layer: 0
   m_Name: Soldier_demo
   m_TagString: Untagged
@@ -366,7 +367,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1518747026348796428
+--- !u!114 &700860038
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -375,9 +376,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 4905522451986760852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa17e14fe889216458a78e742354cbe1, type: 3}
+  m_Script: {fileID: 11500000, guid: cd26879e314cd3348b74c7f38f476e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 4905522451994031912}
+  player: {fileID: 0}
+  agent: {fileID: 2505694493139936681}
+  wayPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  wayPointIndex: 0
+  viewingDistance: 3
+  viewingAngle: 90
+  attackedEffect: {fileID: 0}
+  destroyEffect: {fileID: 0}
+  hp: 3
+--- !u!195 &2505694493139936681
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4905522451986760852}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2.52
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &4905522451986760854
 GameObject:
   m_ObjectHideFlags: 0
